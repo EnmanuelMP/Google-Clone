@@ -1,0 +1,18 @@
+@mixin addImg ($imgUrl, $imgWidth: 25px, $imgHeight: 25px) {
+    
+    background-image: url($imgUrl);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: $imgWidth;
+    height: $imgHeight;
+
+}
+
+@mixin addDisplay($displayType: flex, $justifyContent: center, $alignItems: center) {
+
+    display: $displayType;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+
+}

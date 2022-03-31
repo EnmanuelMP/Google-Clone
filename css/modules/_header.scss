@@ -1,0 +1,36 @@
+@use './mixins' as m;
+@use './settings' as s;
+
+
+header {
+    width: 100%;
+    height: 60px;
+
+    nav {
+        @include m.addDisplay(flex, flex-end);
+
+        .nav-rigth-section {
+            width: 250px;
+            height: auto;
+            @include m.addDisplay();
+
+            a {
+                margin: 0 10px 0 0;
+                color: s.$nav-color;
+            
+            }
+
+            img {
+                border-radius: 50%;
+                margin: 0 0 0 10px;
+            }
+        
+        }
+
+        .menu-icon {
+            @include m.addImg("https://static.thenounproject.com/png/756729-200.png");
+        }
+
+    }
+
+}

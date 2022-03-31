@@ -1,0 +1,18 @@
+@use './settings';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: settings.$font-sm;
+    font-family: Arial, Helvetica, sans-serif;
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+}
